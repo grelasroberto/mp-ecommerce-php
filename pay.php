@@ -57,6 +57,7 @@ $payer->address = array(
 $payer->phone->array(
     "area_code" => "11",
     "number" => "22223333"
+  );
 //   );area_code="11";
 // $payer->phone->number="22223333";
 
