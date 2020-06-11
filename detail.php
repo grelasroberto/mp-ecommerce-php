@@ -1,6 +1,6 @@
 <?php
 
-
+include pay.php;
 ?>
 <!DOCTYPE html>
 <html class="supports-animation supports-columns svg no-touch no-ie no-oldie no-ios supports-backdrop-filter as-mouseuser" lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -143,6 +143,12 @@
                                     <input type="hidden" name="img" value="<?php echo $_POST['img'] ?>"/>
                                     <button type="submit" class="mercadopago-button"
                                     formmethod="post">Pagar la compra</button>
+
+
+                                      <script
+                                       src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+                                       data-preference-id="<?php echo $preference->id; ?>">
+                                      </script>
 
                                   </form>
                                 </div>

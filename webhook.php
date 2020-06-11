@@ -1,1 +1,1 @@
-<?php print_r($_POST); ?>
+<?php error_log(print_r($_POST)); ?>
