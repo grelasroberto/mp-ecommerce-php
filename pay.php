@@ -1,6 +1,6 @@
 <?php
 
-if ( $_GET["payment_status"]= "approved") {
+if ( $_GET["payment_status"]== "approved") {
 
     die("payment approved");
 
