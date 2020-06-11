@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php phpversion() ?>
 <html class="supports-animation supports-columns svg no-touch no-ie no-oldie no-ios supports-backdrop-filter as-mouseuser" lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
     <meta name="viewport" content="width=1024">
@@ -44,7 +45,7 @@
 <body class="as-theme-light-heroimage">
 
     <div class="stack">
- 
+
         <div class="as-search-wrapper" role="main">
             <div class="as-navtuck-wrapper">
                 <div class="as-l-fullwidth  as-navtuck" data-events="event52">
