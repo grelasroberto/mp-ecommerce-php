@@ -1,8 +1,10 @@
 <?php
 
 
-echo "lalala";
 require __DIR__ .  '/vendor/autoload.php';
+
+echo "lalala";
+
 MercadoPago\SDK::setAccessToken('TEST-0090da4d-6e41-47c2-addf-fdbf1ad31eb3');
 
 
