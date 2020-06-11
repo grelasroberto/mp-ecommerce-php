@@ -6,7 +6,7 @@ Este e-commerce de ejemplo será la base para la integración de MercadoPago con
 
 Esta aplicación debe estar accesible mediante un dominio público en internet antes de comenzar con la integración y para ello usaremos [Heroku](https://heroku.com).
 
-Requisitos para realizar la integración: 
+Requisitos para realizar la integración:
 * Cuenta en GitHub.
 * Cuenta en [Heroku](https://heroku.com).
 
@@ -21,7 +21,7 @@ Requisitos para realizar la integración:
 
 4. Conectar a nuestra aplicación en Heroku el repositorio "forkeado" en el paso 1
 <div style="text-align: center;" >
-<img src="docs/step1.png" width=800 />
+<img src="docs/step1.png" width=800 />  zxczaxc
 </div>
 
 5. Activar el deploy autómatico ante cualquier cambio en el branch "master". Realizar un deploy manualmente, mediante la opción "Deploy branch" para comprobar que la app esté funcionando correctamente.
