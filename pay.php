@@ -54,7 +54,7 @@ $payer->address = array(
   "zip_code" => "1111"
 );
 
-$payer->phone->array(
+$payer->phone=array(
     "area_code" => "11",
     "number" => "22223333"
   );
