@@ -1,6 +1,6 @@
 <?php
 
-include pay.php;
+include "./pay.php";
 ?>
 <!DOCTYPE html>
 <html class="supports-animation supports-columns svg no-touch no-ie no-oldie no-ios supports-backdrop-filter as-mouseuser" lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -135,7 +135,7 @@ include pay.php;
                                             <?php echo "$" . $_POST['unit'] ?>g
                                         </h3>
                                     </div>
-                                      <form  action="/pay.php">
+                                      <form  >
 
                                     <input type="hidden" name="unit" value="<?php echo $_POST['unit'] ?>"/>
                                     <input type="hidden" name="price" value="<?php echo $_POST['price'] ?>"/>
