@@ -18,6 +18,11 @@ require __DIR__ .  '/vendor/autoload.php';
 MercadoPago\SDK::setAccessToken('APP_USR-6317427424180639-042414-47e969706991d3a442922b0702a0da44-469485398');
 
 
+//
+// - La URL de la imagen del item no es una URL válida.
+// - El código de área del teléfono del comprador no corresponde.
+// - El número de teléfono del comprador no corresponde.
+// - El JSON que compartiste de la notificación no parece tener el formato correcto.
 
 // Crea un objeto de preferencia
 $preference = new MercadoPago\Preference();
@@ -29,7 +34,7 @@ $item = new MercadoPago\Item();
 $item->id =  "1234";
 $item->title =  $_POST['title'];
 $item->description ='Dispositivo móvil de Tienda e-commerce';
-$item->picture_url = $_POST['img'];
+$item->picture_url ='https://grelasroberto-mp-commerce-php.herokuapp.com/assets/003.jpg'
 $item->quantity = 1;
 $item->unit_price =   $_POST['price'];
 $preference->items = array($item);
@@ -47,8 +52,11 @@ $payer->address = array(
   "zip_code" => "1111"
 );
 
-$payer->phone->area_code="11";
-$payer->phone->number="22223333";
+$payer->phone->array(
+    "area_code" => "11",
+    "number" => "22223333"
+//   );area_code="11";
+// $payer->phone->number="22223333";
 
 
 $preference->back_urls = array(
