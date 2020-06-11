@@ -21,7 +21,20 @@ $item->quantity = 1;
 $item->unit_price =   $_POST['price'];
 $preference->items = array($item);
 $preference->external_reference="sebasch@maximussoft.com";
+
+$payer->address = array(
+  "street_name" => "False",
+  "street_number" => 123,
+  "zip_code" => "1111"
+);
+
+$preference->payer = $payer;
 $preference->save();
 
-
 ?>
+<form action="/procesar-pago" method="POST">
+  <script
+   src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+   data-preference-id="<?php echo $preference->id; ?>">
+  </script>
+</form>
