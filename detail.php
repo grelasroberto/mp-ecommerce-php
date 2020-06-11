@@ -132,7 +132,7 @@
                                         </h3>
                                         <h3 >
 
-                                            <?php echo "$" . $_POST['unit'] ?>
+                                            <?php echo "$" . $_POST['unit'] ?>g
                                         </h3>
                                     </div>
                                       <form  action="/pay.php">

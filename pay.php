@@ -5,7 +5,7 @@ require __DIR__ .  '/vendor/autoload.php';
 
 echo "lalala";
 
-MercadoPago\SDK::setAccessToken('TEST-0090da4d-6e41-47c2-addf-fdbf1ad31eb3');
+MercadoPago\SDK::setAccessToken('TEST-1730556772600131-042800-fd80f3255535e0a46c3091d83290484d-373768843');
 
 
 
