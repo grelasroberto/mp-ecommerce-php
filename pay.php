@@ -3,8 +3,7 @@
 if ( $_GET[]"payment_status"]= "approved") {
 
     die("payment approved");
-} else if ( $_GET[]"payment_status"]= "approved") {
-
+ 
 } else if ( $_GET[]"payment_status"]= "") {
 
 }
