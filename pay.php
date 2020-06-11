@@ -34,12 +34,14 @@ $item = new MercadoPago\Item();
 $item->id =  "1234";
 $item->title =  $_POST['title'];
 $item->description ='Dispositivo móvil de Tienda e-commerce';
-$item->picture_url ='https://grelasroberto-mp-commerce-php.herokuapp.com/assets/003.jpg'
+$item->picture_url ="https://grelasroberto-mp-commerce-php.herokuapp.com/assets/003.jpg";
 $item->quantity = 1;
-$item->unit_price =   $_POST['price'];
+$item->unit_price = $_POST['price'];
+
 $preference->items = array($item);
 $preference->external_reference="sebasch@maximussoft.com";
-$preference->notification_url="https://grelasroberto-mp-commerce-php.herokuapp.com/webhook.php";
+// $preference->notification_url="https://grelasroberto-mp-commerce-php.herokuapp.com/webhook.php";
+$preference->notification_url="https://star.maximussoft.com/dShort/qrmercadopago";
 
 $payer = new MercadoPago\Payer();
 $payer->name = "Lalo";
