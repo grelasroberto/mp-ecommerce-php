@@ -1,4 +1,4 @@
-<?php error_log(print_r($_POST));
+<?php error_log(print_r($_POST,true));
 
 error_log("FUCKYOUUUU");
 
