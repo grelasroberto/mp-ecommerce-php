@@ -1,6 +1,10 @@
-<?php error_log(print_r($_POST,true));
+<?php
 
-error_log("FUCKYOUUUU");
+$post=implode($_POST);
 
-error_log($_POST);
+error_log(print_r($post,true));
+
+
+print_r($post,true);
+
 ?>
